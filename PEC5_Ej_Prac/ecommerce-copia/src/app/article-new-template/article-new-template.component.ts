@@ -38,7 +38,7 @@ export class ArticleNewTemplateComponent {
 
   onSubmit() {
     if (this.articleForm.valid) {
-      console.log('Article data:', this.articleForm.value);
+      console.log('Article data:', this.articleForm.value, "Article submited successfully");
     } else {
       console.error('Form is invalid');
     }
