@@ -2,7 +2,7 @@
     <h2>Crear nuevo artículo</h2>
     <form [formGroup]="articleForm" (ngSubmit)="onSubmit()">
       <div>
-        <label for="name">Nombre del artículo:</label>
+        <label for="name">Nombre de la consola o videojuego:</label>
         <input id="name" formControlName="name" />
         <span *ngIf="name?.touched && name?.invalid">
           Nombre es obligatorio.
