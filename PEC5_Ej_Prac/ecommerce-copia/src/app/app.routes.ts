@@ -11,6 +11,13 @@ export const routes: Routes = [
         (m) => m.ArticleNewTemplateComponent
       ),
   },
+  {
+    path: 'new-article-reactive',
+    loadComponent: () =>
+      import('./article-new-reactive/article-new-reactive.component').then(
+        (m) => m.ArticleNewReactiveComponent
+      ),
+  },
   { path: '**', redirectTo: '' }, // Ruta por defecto para no encontrados
 ];
 
